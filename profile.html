@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="section_form">
+            <h1 class="section_title">Profile</h1>
+            <div class="profile">
+                <img class="profile_img" src="image/foto.jpg" alt="foto">
+                <div class="form_img">
+                    <label for="image" class="image_label">
+                        <span class="material-symbols-outlined image_icon">
+                            photo_camera
+                        </span>    
+                    </label>
+                    <input type="file" name="image" id="image" class="image_input">
+                    <p class="profile_text">Up to 1 MB (300x300 px)</p>
+                </div>
+                <button type="reset" class="reset"><span class="material-symbols-outlined reset_icon">
+                    delete
+                    </span></button>   
+            </div>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="first_label">
+                    <div class="second_label">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name">
+                    </div>
+                    <div class="second_label">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="first_label">
+                    <div class="second_label">
+                        <label for="pets">Country</label>
+                          <select name="country" id="pets">
+                              <option value=""></option>
+                              <option value="Ukraina">Ukraina</option>
+                              <option value="USA">USA</option>
+                              <option value="Poland">Poland</option>
+                              <option value="Kanada">Kanada</option>
+                          </select>
+                    </div>
+                    <div class="second_label">
+                        <label for="city">City</label>
+                        <input type="text" name="City" id="city">
+                    </div>
+                </div>
+                <div class="first_label">
+                    <div class="second_label">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" name="Zip Code" id="zip"> 
+                    </div>
+                    <div class="second_label">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" name="phone" id="tel">
+                    </div>
+                </div>
+            <textarea class="comment"></textarea>
+        </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>11. HTML Верстка форми</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="section_form">
+            <h1 class="section_title">Create an Account</h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="first_label">
+                <div class="second_label">
+                    <label form="name">First Name</label>
+                    <input type="text" name="Firs Name" id="name">
+                </div>
+                <div class="second_label">
+                    <label for="name">Last Name</label>
+                    <input type="text" name="Last Name" id="name">
+                </div>
+                </div>
+                <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+            <p class="section_text">We'll never share your email with anyone else.</p>
+            <div class="radio_group">
+                <label class="castome_radio__label castome_first__label">
+                    Male
+                    <input type="radio" name="gender">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="castome_radio__label">
+                    Female
+                    <input type="radio" name="gender">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="first_label">
+                <div class="second_label">
+                <label for="pets">Country</label>
+                <select name="country" id="pets">
+                    <option></option>
+                    <option>Ukraina</option>
+                    <option>USA</option>
+                    <option>Poland</option>
+                    <option>Kanada</option>
+                </select>
+                </div>
+                <div class="second_label">
+                <label for="city">City </label>
+                    <input type="text" name="City" id="city">
+                </div>    
+            </div>
+            <label for="comment"></label>    
+            <textarea class="comment" id="comment"></textarea>
+        </form>
+        </section>
+        <div class="bot">
+            <p class="bot_text">
+                By clicking the 'Sign Up' button, you confirm that you accept our
+                <a href="#" class="bot_text_link">Terms of Use</a> and <a href="#" class="bot_text_link">Privacy Policy</a>.
+            </p>
+            <h1 class="bot_title">Have an account?<a href="profile.html" class="bot_title_link">Log In</a></h1>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
